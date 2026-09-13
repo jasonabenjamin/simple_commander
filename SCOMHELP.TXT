@@ -1,0 +1,48 @@
+Simple Commander
+Keyboard Help
+
+D - DRIVES..... Show available drives.
+T - TREE....... Toggle the directory tree.
+V - VIEW....... Arm View, then click a file to view it.
+E - EDIT....... Arm Edit, then click a file to edit it.
+K - MKDIR...... Make a new directory.
+C - COPY....... Copy selected or tagged files.
+M - MOVE....... Move selected or tagged files.
+X - DELETE..... Delete the selected file or directory.
+R - RENAME..... Rename the selected file or directory.
+A - SELECT ALL. Select all visible files.
+U - DESELECT... Deselect all visible files.
+? - HELP....... Display this help file.
+P - PALETTE.... Cycle through the six color schemes.
+
+J - TAG........ Mark or unmark the file under the cursor.
+H - HIDDEN..... Show or hide hidden files.
+/ - FILTER...... Enter a temporary filename filter.
+
+ENTER.......... Open the selected item or enter a drive.
+BACKSPACE...... Go to the parent directory.
+UP/DOWN........ Move the file cursor.
+LEFT/RIGHT..... Move by column.
+PGUP/PGDN...... Move by page.
+
+EDITOR COMMANDS
+ALT-D.......... Delete the current line.
+ALT-I.......... Insert a blank line before the current line.
+ALT-W.......... Write (save) the current file.
+ESC............ Exit; prompts if the file is modified.
+
+EDITOR HORIZONTAL SCROLLING
+Horizontal scrolling is global: all visible lines move together.
+The viewport shifts left when the cursor moves beyond the right edge
+and shifts right when the cursor moves back toward the beginning.
+
+EDITOR STATUS
+After ALT-W successfully writes the file, the bottom status displays
+Written. Editing the file again changes the status back to Modified.
+
+COMMANDS WORK LIKE MOUSE CLICKS.
+View, Edit, Rename, Copy, Move, and Delete are available from the keyboard.
+V and E operate immediately on the selected file.
+C and M operate immediately on the selected or tagged files.
+X immediately opens the delete confirmation for the selected item.
+R arms Rename; click a file or directory to edit its name.
