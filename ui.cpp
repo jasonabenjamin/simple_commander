@@ -1,5 +1,5 @@
 /*
- * AI Freedom License (AIFL) 1.0
+ * AI-Attribution License (AIAL) v2 — Draft
  */
 #include "simple_commander.h"
 
@@ -91,7 +91,54 @@ void draw_screen(SDL_Renderer* r, int w, int h)
     centered_text(r, format_size(total), 8, 225, 43, CYAN);
 
     text(r, "Simple Commander", 240, 14, CYAN);
-    text(r, "AI Freedom License 1.0", 240, 28, CYAN);
+
+    // Scroll the license horizontally inside the top-center panel.
+    // The renderer is continuously refreshed by the main loop, so this
+    // marquee remains animated even when there is no user input.
+    const int license_left = 240;
+    const int license_panel_right = 232 + std::max(201, w - 439) - 8;
+    const int license_width = std::max(1, license_panel_right - license_left);
+    const std::string license_text = "AI-Attribution License v2 (Draft)";
+    const int license_text_width = text_width(license_text);
+
+    if (license_text_width > license_width)
+    {
+        const int travel = license_text_width - license_width;
+        const Uint32 pause_ms = 1200;
+        const Uint32 scroll_ms = 3500;
+        const Uint32 cycle_ms = pause_ms + scroll_ms + pause_ms + scroll_ms;
+        const Uint32 t = SDL_GetTicks() % cycle_ms;
+        int offset = 0;
+
+        if (t < pause_ms)
+        {
+            offset = 0;
+        }
+        else if (t < pause_ms + scroll_ms)
+        {
+            const Uint32 elapsed = t - pause_ms;
+            offset = static_cast<int>((static_cast<long long>(travel) * elapsed) / scroll_ms);
+        }
+        else if (t < pause_ms + scroll_ms + pause_ms)
+        {
+            offset = travel;
+        }
+        else
+        {
+            const Uint32 elapsed = t - pause_ms - scroll_ms - pause_ms;
+            offset = travel - static_cast<int>((static_cast<long long>(travel) * elapsed) / scroll_ms);
+        }
+
+        SDL_Rect license_clip{license_left, 28, license_width, 18};
+        SDL_RenderSetClipRect(r, &license_clip);
+        text(r, license_text, license_left - offset, 28, CYAN);
+        SDL_RenderSetClipRect(r, nullptr);
+    }
+    else
+    {
+        text(r, license_text, license_left, 28, CYAN);
+    }
+
     text(r, "SDL2 File Manager", 240, 42, CYAN);
 
     const int dt_left = std::max(440, w - 200);

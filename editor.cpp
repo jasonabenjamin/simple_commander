@@ -1,4 +1,4 @@
-/* AI Freedom License (AIFL) 1.0 */
+/* AI-Attribution License (AIAL) v2 — Draft */
 #include "simple_commander.h"
 #include <cstring>
 

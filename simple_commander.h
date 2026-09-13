@@ -1,6 +1,6 @@
 /*
  * Simple Commander - shared declarations
- * AI Freedom License (AIFL) 1.0
+ * AI-Attribution License (AIAL) v2 — Draft
  */
 #ifndef SIMPLE_COMMANDER_H
 #define SIMPLE_COMMANDER_H

@@ -30,15 +30,17 @@ It is based primarily on **Directory Commander (DCOM)**, with influences from ot
 
 ## License
 
-Simple Commander is released under the **AI Freedom License (AIFL) 1.0**.
+Simple Commander uses the **AI-Attribution License (AIAL) v2 working draft** for its AI-attribution and permissive-licensing framework. The current AIAL v2 text is explicitly a working skeleton and is not presented as finalized legal text.
 
-See `LICENSE.TXT` for the license and `SCOMHELP.TXT` for the complete program help reference.
+See `AIAL_LICENSE_v2_SKELETON.md` for the current AIAL draft and `SCOMHELP.TXT` for the complete program help reference.
+
+The project was developed with AI assistance, and the AIAL framework is used to make that provenance explicit without making unsupported claims about the legal status of AI-generated code.
 
 ## Downloads
 
 A prebuilt Windows release is provided for users who do not want to compile the program. The Windows ZIP contains the executable and required runtime DLLs so that it can be extracted and run without setting up a development environment.
 
-[Download Simple Commander for Windows](../../releases/latest/download/simple_commander.zip)
+**[Download simple_commander.zip](simple_commander.zip)**
 
 The source distribution is available separately for users who want to build, study, or modify the program.
 
