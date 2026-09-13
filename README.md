@@ -44,7 +44,7 @@ Primary AI model disclosed for this project: **ChatGPT (GPT-5.6 Luna), OpenAI**.
 
 A prebuilt Windows release is provided for users who do not want to compile the program. The Windows ZIP contains the executable and required runtime DLLs so that it can be extracted and run without setting up a development environment.
 
-**[Download simple_commander.zip](simple_commander.zip)**
+**[Download simple_commander.zip]([simple_commander.zip](https://github.com/jasonabenjamin/simple_commander/releases/download/v1.0.1/simple_commander.zip))**
 
 The source distribution is available separately for users who want to build, study, or modify the program.
 
