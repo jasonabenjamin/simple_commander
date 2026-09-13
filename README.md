@@ -37,6 +37,7 @@ See `AIFL-1.0.txt` for the license and `SCOMHELP.TXT` for the complete program h
 ## Downloads
 
 A prebuilt Windows release is provided for users who do not want to compile the program. The Windows ZIP contains the executable and required runtime DLLs so that it can be extracted and run without setting up a development environment.
+
 [Download Simple Commander for Windows](../../releases/latest/download/simple_commander.zip)
 
 The source distribution is available separately for users who want to build, study, or modify the program.
