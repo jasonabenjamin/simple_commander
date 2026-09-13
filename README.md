@@ -32,7 +32,7 @@ It is based primarily on **Directory Commander (DCOM)**, with influences from ot
 
 Simple Commander is released under the **AI Freedom License (AIFL) 1.0**.
 
-See `LICENSE.txt` for the license and `SCOMHELP.TXT` for the complete program help reference.
+See `LICENSE.TXT` for the license and `SCOMHELP.TXT` for the complete program help reference.
 
 ## Downloads
 
