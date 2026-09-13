@@ -1,3 +1,7 @@
+# Simple Commander
+# Synthetic Source License (SySL) Version 1.0
+# AI MODEL DISCLOSURE: ChatGPT (GPT-5.6 Luna) — OpenAI
+#
 # Simple Commander - Windows / MSYS2 MinGW-w64
 # Builds the modular source tree as simple.exe with the application icon.
 

@@ -1,6 +1,7 @@
 /*
- * Simple Commander - shared declarations
- * AI-Attribution License (AIAL) v2 — Draft
+ * Simple Commander
+ * Synthetic Source License (SySL) Version 1.0
+ * AI MODEL DISCLOSURE: ChatGPT (GPT-5.6 Luna) — OpenAI
  */
 #ifndef SIMPLE_COMMANDER_H
 #define SIMPLE_COMMANDER_H
