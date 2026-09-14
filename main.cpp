@@ -1,7 +1,5 @@
 /*
- * Simple Commander
- * Synthetic Source License (SySL) Version 1.0
- * AI MODEL DISCLOSURE: ChatGPT (GPT-5.6 Luna) — OpenAI
+ * AI Freedom License (AIFL) 1.0
  */
 #include "simple_commander.h"
 
@@ -65,6 +63,12 @@ int main(int argc, char** argv)
     // change while the program is running.
     startup_free_memory = free_memory_text();
     startup_free_drive = free_drive_text(current_dir);
+
+    // Ensure the SDL window is active before entering the event loop.
+    // On Windows, the first mouse click can otherwise be consumed only
+    // as the activation/focus click instead of reaching the application.
+    SDL_RaiseWindow(window);
+    SDL_SetWindowInputFocus(window);
 
     SDL_StartTextInput();
 
