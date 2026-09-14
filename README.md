@@ -48,7 +48,9 @@ The source distribution is available separately for users who want to build, stu
 
 ## Building from Source
 
-The source is written in C++17 and uses SDL2 and SDL_ttf. A Makefile is included for the intended MinGW/MSYS2 build environment.
+The source is written in C++17 and uses SDL2 and SDL_ttf. A Makefile is included for convenience and was developed using MinGW/MSYS2.
+
+Other build environments can be used, but the source currently supports Windows only.    
 
 ## Background
 
