@@ -16,6 +16,10 @@ int main(int argc, char** argv)
         return 1;
     }
     apply_color_scheme();
+    // Allow the first mouse click to reach the SDL window even when Windows
+    // is activating it with that click.
+    SDL_SetHint(SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH, "1");
+
     if (TTF_Init() != 0 || !load_font())
     {
         std::fprintf(stderr, "SDL_ttf/font initialization failed.\n");
@@ -63,12 +67,6 @@ int main(int argc, char** argv)
     // change while the program is running.
     startup_free_memory = free_memory_text();
     startup_free_drive = free_drive_text(current_dir);
-
-    // Ensure the SDL window is active before entering the event loop.
-    // On Windows, the first mouse click can otherwise be consumed only
-    // as the activation/focus click instead of reaching the application.
-    SDL_RaiseWindow(window);
-    SDL_SetWindowInputFocus(window);
 
     SDL_StartTextInput();
 
